@@ -22,3 +22,23 @@ html {
     padding: 20px;
     box-sizing: border-box;
   }
+  span {
+    display: block;
+    width: 160px;
+    height: 30px;
+    background-color: royalblue;
+    color: white; 
+    margin-bottom: 20px;
+  }
+  .parent1 {
+    width: 100px;
+    height: 100px;
+    padding: 30px;
+    background-color: royalblue;
+  }
+  .child1 {
+    width: 200px;
+    height: 100px;
+    background-color: orange;
+    opacity: 0.4;
+  }
