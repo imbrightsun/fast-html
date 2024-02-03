@@ -1,0 +1,28 @@
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: serif;
+}
+.title {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+a {
+  display: block;
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  line-height: 100px;
+}
+.text {
+  font-size: 24px;
+  text-indent: 50px;
+}
