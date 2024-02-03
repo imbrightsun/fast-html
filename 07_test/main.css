@@ -1,0 +1,22 @@
+body {
+  height: 3000px;
+}
+.first {
+  width: 400px;
+  height: 200px;
+  background-color: orange;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+/*   background-repeat: repeat-X; */
+  background-position: center;
+}
+.second {
+  height: 400px;
+  background-color: orange;
+  background-image: url("https://heropy.blog/css/images/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
