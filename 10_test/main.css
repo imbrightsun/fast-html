@@ -1,0 +1,47 @@
+.button {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transition: 
+    width .5s, 
+    background-color 3s ;
+}
+.button:active {
+  width: 300px;
+  background-color: royalblue;
+}
+.container {
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+.container .item1 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: rotate(45deg);
+}
+.container2 {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+}
+.container2 .item2 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: perspective(150px) rotateX(45deg) translateX(100px);
+}
+.container3 {
+  width: 100px;
+  height: 100px;
+  background-color: royalblue;
+  perspective:150px;
+}
+.container3 .item3 {
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  transform: rotateX(45deg) translateX(100px);
+}
