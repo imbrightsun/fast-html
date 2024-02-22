@@ -1,0 +1,93 @@
+body {
+  color: #333;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+img {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+/* HEADER */
+header {
+  width: 100%;
+  background-color: royalblue;
+  position: fixed;
+  top: 0;
+}
+header > .inner {
+  height: 120px;
+  background-color: orange;
+}
+header .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+header .sub-menu {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+header .sub-menu > ul.menu {
+  display: flex;
+}
+header .sub-menu > ul.menu > li {
+  position: relative;
+}
+header .sub-menu > ul.menu > li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+header .sub-menu > ul.menu > li:last-child::before {
+  display: none;
+}
+header .sub-menu > ul.menu > li a {
+  font-size: 12px;
+  padding: 11px 16px ;
+  color: #656565;
+  display: block;
+}
+header .sub-menu .search {
+  height: 34px;
+}
+header .sub-menu .search input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+
+}
+header .sub-menu .search .material-symbols-outlined {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+}
