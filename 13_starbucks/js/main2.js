@@ -90,6 +90,7 @@ promotionToggleBtn.addEventListener('click', function () {
   }
 });
 
+
 // 플로팅 애니메이션 만들기 (둥둥 떠있는 애들) ----------------------------
 // 범위 랜덤 함수(소수점 2자리까지)
 function random(min, max) {
@@ -105,7 +106,7 @@ function floatingObject(selector, delay, size) {
     random(1.5, 2.5),//애니메이션 동작 시간
     { //옵션
       y: size,
-      repeat: -1,
+      repeat: -1, //무한반복
       yoyo: true,
       ease: "power1.inOut",
       delay: random(0, delay)
