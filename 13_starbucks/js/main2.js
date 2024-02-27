@@ -89,3 +89,15 @@ promotionToggleBtn.addEventListener('click', function () {
     promotionEl.classList.remove('hide');
   }
 });
+
+// 플로팅 애니메이션 만들기 (둥둥 떠있는 애들) ----------------------------
+function floatingObject(selector) {
+ // gsap.to(요소, 시간, 옵션);
+  gsap.to(selector, 1, {
+    y:20,
+    repeat: -1,
+    yoyo: true,
+    ease: "power1.inOut",
+  });
+}
+floatingObject('.floating');
