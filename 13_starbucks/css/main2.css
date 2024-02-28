@@ -5,7 +5,7 @@ body {
   font-weight: 400;
   line-height: 1.4;
   font-family: "Nanum Gothic", sans-serif;
-  height: 5000px;
+  height: 6000px;
 }
 img {
   display: block;
@@ -168,9 +168,6 @@ header .main-menu {
   z-index: 1;
   display: flex;
 }
-header .main-menu .item {
-  
-}
 header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -291,9 +288,6 @@ header .badges .badge {
 
 
 /* NOTICE ------------------------------------------------- */
-.notice {
-
-}
 .notice .notice-line {
   position: relative;
 }
@@ -361,8 +355,7 @@ header .badges .badge {
 .notice .notice-line .inner__right h2 {
   font-size: 17px;
   font-weight: 700;
-  margin-right: ;
-}
+}  
 .notice .notice-line .inner__right .toggle-promotion {
   width: 62px;
   height: 62px;
@@ -500,6 +493,12 @@ header .badges .badge {
   margin-top: 10px;
   flex-grow: 1;
 }
+<<<<<<< HEAD
+=======
+
+
+/* YOURUBE ------------------------------------------------ */
+>>>>>>> 5bd137742 (Starbucks2_section SEASON PRODUCT)
 .youtube {
   position: relative;
   height: 700px;
@@ -553,8 +552,36 @@ header .badges .badge {
   top: 350px;
   left: 150px;
 }
+<<<<<<< HEAD
 .youtube .floating3 {
   position: absolute;
   bottom: -200px;
   right: 0;
+=======
+
+
+/* SEASON PRODUCT ----------------------------------------- */
+.season-product {
+  background-image: url(../images/season_product_bg.jpg);
+}
+.season-product .inner {
+  height: 400px;
+}
+.season-product .floating3 {
+  position: absolute;
+  top: -200px;
+  right: 0;
+}
+
+.season-product .text-group {
+  position: absolute;
+  top: 110px;
+  right: 100px;
+}
+.season-product .text-group .title {
+  margin-bottom: 10px;
+}
+.season-product .text-group .description {
+  margin-bottom: 15px;
+>>>>>>> 5bd137742 (Starbucks2_section SEASON PRODUCT)
 }
