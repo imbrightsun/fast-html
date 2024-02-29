@@ -116,3 +116,10 @@ function floatingObject(selector, delay, size) {
 floatingObject('.floating1', 1, 15);
 floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
+
+
+// ScrollMagic Libraries CDN   https://cdnjs.com/libraries/ScrollMagic
+const spyEls = document.querySelectorAll('section.scroll-spy')
+spyEls.forEach(fuction () {
+  new ScrollMagic.Scene().setClassToggle().addTo(); 
+});
