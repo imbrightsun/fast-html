@@ -119,7 +119,13 @@ floatingObject('.floating3', 1.5, 20);
 
 
 // ScrollMagic Libraries CDN   https://cdnjs.com/libraries/ScrollMagic
-const spyEls = document.querySelectorAll('section.scroll-spy')
-spyEls.forEach(fuction () {
-  new ScrollMagic.Scene().setClassToggle().addTo(); 
+const spyEls = document.querySelectorAll('section.scroll-spy');
+spyEls.forEach(function (spyEl) {
+  new ScrollMagic
+    .Scene({
+      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
+      triggerHook: .8 // 뷰포트 기준으로 80% 위치에 걸려있게 함
+    })
+    .setClassToggle(spyEl, 'show')
+    .addTo(new ScrollMagic.Controller()); 
 });
