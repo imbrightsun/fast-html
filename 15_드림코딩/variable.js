@@ -9,7 +9,7 @@ console.log(age); // 변수에 대한 정의가 나와있지 않은데도 로그
 
 
 
-// 2. Variable (변수)
+// 2. Variable (변수), rw(read/write 가능)
 // let (added in ES6)
 let globalName = 'global name'; //글로벌 변수는 프로그램 전체에서 모든 기능에 액세스할 수 있는 모든 기능 외부에 선언되는 변수 유형. 글로벌 변수는 대개 모든 기능 위에 선언되며 프로그램 실행 시간 동안 모든 기능이 조작할 수 있기 때문에 최소로 유지
 {
@@ -35,21 +35,26 @@ console.log(age);
 
 
 
-// 3. Constants 값을 변경할 수 없음
-// favor immutable data type always for a few reasons:
-// - security
-// - thread safety
-// - reduce human mistakes
+// 3. Constant 값을 변경할 수 없음, r(read only)
+// use const whenever possible.
+// only use let if variable needs to change. 
 const daysInWeek = 7;
 const maxNumber = 5;
 
 // * 정리: 자바스크립트에서는 변수를 선언할 때 mutable type의 "let", immutable type의 "const"가 있음
-
+// Note!
+// Immutable data types: primitive types, frozen objects (i,e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduce human mistakes
 
 
 // 4. Variable types
 // primitive (single item) : number, string, boolean, null, undefined, symbol
 // object (box container 하나의 아이템을 여러개로 묶어 한 단위로 관리)
+// 
 // function (first-class function) 
 
 // number
